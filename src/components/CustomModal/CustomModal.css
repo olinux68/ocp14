@@ -1,0 +1,66 @@
+/* Variables CSS */
+:root {
+  --overlay-bg: rgba(0, 0, 0, 0.75);
+  --modal-bg: #fff;
+  --modal-padding: 20px;
+  --modal-radius: 10px;
+  --modal-width: 400px;
+  --modal-height: auto; /* Changez ici pour ajuster la hauteur automatiquement */
+  --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --close-bg: #000;
+  --close-size: 30px;
+  --close-font-size: 25px;
+  --close-color: #fff;
+}
+
+/* Styles pour la modale */
+.overlayStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--overlay-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalStyle {
+  background-color: var(--modal-bg);
+  padding: var(--modal-padding);
+  border-radius: var(--modal-radius);
+  width: var(--modal-width);
+  height: var(--modal-height);
+  box-shadow: var(--modal-shadow);
+  position: relative;
+  text-align: left; /* Assurez-vous que le texte est aligné à gauche */
+}
+
+.modalStyle h3 {
+  margin: 0;
+  font-weight: normal; /* Retirer le gras du texte */
+}
+
+.close {
+  position: absolute;
+  top: -35px; /* Ajuster la position pour un meilleur alignement */
+  right: -15px;
+  background-color: var(--close-bg); /* Fond noir */
+  border-radius: 50%; /* Assure que la croix est ronde */
+  width: var(--close-size); /* Taille plus grande */
+  height: var(--close-size); /* Taille plus grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--close-font-size); /* Taille de police plus grande */
+  color: var(--close-color);
+  border: none; /* Retirer la bordure par défaut */
+}
+
+/* Désactiver les styles de survol */
+.close:hover {
+  background-color: var(--close-bg); /* Garder le fond noir */
+}
