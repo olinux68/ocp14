@@ -5,7 +5,7 @@
   --modal-padding: 20px;
   --modal-radius: 10px;
   --modal-width: 400px;
-  --modal-height: auto; /* Changez ici pour ajuster la hauteur automatiquement */
+  --modal-height: auto; 
   --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   --close-bg: #000;
   --close-size: 30px;
@@ -35,32 +35,32 @@
   height: var(--modal-height);
   box-shadow: var(--modal-shadow);
   position: relative;
-  text-align: left; /* Assurez-vous que le texte est aligné à gauche */
+  text-align: left; 
 }
 
 .modalStyle h3 {
   margin: 0;
-  font-weight: normal; /* Retirer le gras du texte */
+  font-weight: normal; 
 }
 
 .close {
   position: absolute;
-  top: -35px; /* Ajuster la position pour un meilleur alignement */
+  top: -35px; 
   right: -15px;
-  background-color: var(--close-bg); /* Fond noir */
-  border-radius: 50%; /* Assure que la croix est ronde */
-  width: var(--close-size); /* Taille plus grande */
-  height: var(--close-size); /* Taille plus grande */
+  background-color: var(--close-bg); 
+  border-radius: 50%; 
+  width: var(--close-size); 
+  height: var(--close-size); 
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: var(--close-font-size); /* Taille de police plus grande */
+  font-size: var(--close-font-size); 
   color: var(--close-color);
-  border: none; /* Retirer la bordure par défaut */
+  border: none; 
 }
 
-/* Désactiver les styles de survol */
+
 .close:hover {
-  background-color: var(--close-bg); /* Garder le fond noir */
+  background-color: var(--close-bg); 
 }
