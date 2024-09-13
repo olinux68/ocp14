@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './CustomModal.css';
 
 const CustomModal = ({ isOpen, onClose, children }) => {
@@ -7,24 +6,18 @@ const CustomModal = ({ isOpen, onClose, children }) => {
 
   return React.createElement(
     'div',
-    { className: 'overlay' },
+    { className: 'overlayStyle' },
     React.createElement(
       'div',
-      { className: 'modal' },
+      { className: 'modalStyle' },
       React.createElement(
         'button',
-        { className: 'close', onClick: onClose, 'aria-label': 'Fermer' },
-        '\u00D7'
+        { className: 'close', onClick: onClose },
+        '×'
       ),
       children
     )
   );
-};
-
-CustomModal.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
 };
 
 export default CustomModal;
